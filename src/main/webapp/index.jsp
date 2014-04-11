@@ -1,8 +1,17 @@
 <html>
-<body>
-    <h2>Jersey RESTful Web Application!</h2>
-    <p><a href="webapi/myresource">Jersey resource</a>
-    <p>Visit <a href="http://jersey.java.net">Project Jersey website</a>
-    for more information on Jersey!
-</body>
+	<head>
+	</head>
+	<body>
+		<div app='options'> </div>
+		<script src='wro/lib.js'></script>
+		<script src='wro/app.js?minimize=false'></script>
+		<script>
+			angular.module('app').run(function($inject) {
+				var $rootScope = $inject.get('$rootScope');
+				$rootScope.options = {
+					paz: 'derp'
+				};
+			});
+		</script>
+	</body>
 </html>

@@ -3,7 +3,19 @@
 	<!--http://code.google.com/p/wro4j/wiki/WroFileFormat-->
 
     <group name="lib">
-        <js minimize="false">classpath:META-INF/resources/webjars/jquery/1.9.1/jquery.js</js>
+		<js>classpath:META-INF/resources/webjars/angularjs/1.2.8/angular.js</js>
+		<js>classpath:META-INF/resources/webjars/angularjs/1.2.8/angular-route.js</js>
+		<js>classpath:META-INF/resources/webjars/angularjs/1.2.8/angular-resource.js</js>
+    </group>
+
+    <group name="app">
+		<js>/assets/config/init.js</js>
+
+		<js>/assets/config/app/**.js</js>
+		<js>/assets/components/**.js</js>
+		<js>/assets/screen/**.js</js>
+
+		<js>/assets/config/bootstrap.js</js>
     </group>
 
 </groups>
