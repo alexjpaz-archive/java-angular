@@ -114,6 +114,7 @@ angular.module('app').config(function($provide, $compileProvider, AppProvider) {
 			};
 
 			$compileProvider.directive(componentName, componentDefinitionFn);
+
 		};
 
 		this.$get = function() {
