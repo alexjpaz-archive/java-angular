@@ -13,6 +13,16 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
-        <url-pattern>/webapi/*</url-pattern>
+        <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>WebResourceOptimizer</filter-name>
+        <filter-class>ro.isdc.wro.http.WroFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>WebResourceOptimizer</filter-name>
+        <url-pattern>/wro/*</url-pattern>
+    </filter-mapping>
+ 
 </web-app>

@@ -50,9 +50,21 @@
             <artifactId>jersey-media-moxy</artifactId>
         </dependency>
         -->
-    </dependencies>
-    <properties>
-        <jersey.version>2.7</jersey.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+		<dependency>
+			<groupId>ro.isdc.wro4j</groupId>
+			<artifactId>wro4j-core</artifactId>
+			<version>1.7.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>angularjs</artifactId>
+			<version>1.2.8</version>
+		</dependency>
+
+	</dependencies>
+	<properties>
+		<jersey.version>2.7</jersey.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 </project>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+	<!--http://code.google.com/p/wro4j/wiki/WroFileFormat-->
+
+    <group name="lib">
+        <js minimize="false">classpath:META-INF/resources/webjars/jquery/1.9.1/jquery.js</js>
+        <js minimize="false">classpath:META-INF/resources/webjars/angularjs/1.2.8/angular.js</js>
+        <js minimize="false">classpath:META-INF/resources/webjars/angularjs/1.2.8/angular-resource.js</js>
+        <js minimize="false">classpath:META-INF/resources/webjars/angularjs/1.2.8/angular-route.js</js>
+        <js minimize="false">classpath:META-INF/resources/webjars/momentjs/2.5.0/min/moment-with-langs.js</js>
+        <js minimize="false">classpath:META-INF/resources/webjars/d3js/3.3.5/d3.js</js>
+        <js minimize="false">classpath:META-INF/resources/webjars/bootstrap/3.1.1/js/bootstrap.js</js>
+    </group>
+
+    <group name="app">
+        <js minimize="false">/assets/config/init.js</js>
+        <js minimize="false">/assets/config/routes*.js</js>
+        <js minimize="false">/assets/config/navigation.js</js>
+        <js minimize="false">/assets/components/**.js</js>
+        <js minimize="false">/assets/screen/**.js</js>
+        <js minimize="false">/assets/directives/**.js</js>
+        <js minimize="false">/assets/helpers/**.js</js>
+        <js minimize="false">/assets/config/bootstrap.js</js>
+
+        <css minimize="false">/assets/css/common/**.css</css>
+        <css minimize="false">/assets/components/**.css</css>
+        <css minimize="false">/assets/components/**.less</css>
+        <css minimize="false">/assets/screen/**.css</css>
+        <css minimize="false">/assets/screen/**.less</css>
+    </group>
+
+    <!-- "skins" -->
+    <group name='web'>
+        <group-ref>app</group-ref>
+        <css minimize="true">classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/bootstrap.less</css>
+        <css minimize="false">/assets/css/web/**.css</css>
+    </group>
+
+    <group name='embedded'>
+        <group-ref>portal</group-ref>
+        <group-ref>bootstrap3-theme-layout-only</group-ref>
+        <css minimize="false">/assets/css/embedded/**.css</css>
+    </group>
+
+    <group name="portal">
+        <group-ref>app</group-ref>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/variables.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/mixins.less</css>
+        
+        <css>/assets/css/portal/bootstrap3/variables.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/normalize.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/print.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/scaffolding.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/type.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/grid.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/tables.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/forms.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/buttons.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/component-animations.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/glyphicons.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/dropdowns.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/button-groups.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/input-groups.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/navs.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/navbar.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/breadcrumbs.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/pagination.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/pager.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/labels.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/badges.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/thumbnails.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/progress-bars.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/list-group.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/wells.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/alerts.less</css>
+        
+<!--         <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/theme.less</css> -->
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/scaffolding.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/close.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/panels.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/code.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/grid.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/media.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/modals.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/tooltip.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/popovers.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/carousel.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/utilities.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/responsive-utilities.less</css>
+        
+        <css>classpath:META-INF/resources/webjars/font-awesome/4.0.3/css/font-awesome.css</css>
+        
+        <css>/assets/css/portal/**.css</css>
+        <css>/assets/css/portal/**.less</css>
+    </group>
+
+
+    
+    <!-- Bootstrap 3 Variations -->
+    <group name="bootstrap3-theme-standard">
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/variables.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/mixins.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/normalize.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/print.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/scaffolding.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/type.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/grid.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/tables.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/forms.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/buttons.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/component-animations.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/glyphicons.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/dropdowns.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/button-groups.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/input-groups.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/navs.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/navbar.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/breadcrumbs.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/pagination.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/pager.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/labels.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/badges.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/thumbnails.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/progress-bars.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/list-group.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/wells.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/alerts.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/theme.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/scaffolding.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/close.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/panels.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/code.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/grid.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/media.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/modals.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/tooltip.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/popovers.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/carousel.less</css>
+
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/utilities.less</css>
+        <css>classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/responsive-utilities.less</css>
+    </group>
+
+    <group name="bootstrap3-theme-layout-only">
+        <css minimize="true">classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/scaffolding.less</css>
+        <css minimize="true">classpath:META-INF/resources/webjars/bootstrap/3.1.1/less/grid.less</css>
+    </group>
+</groups>
